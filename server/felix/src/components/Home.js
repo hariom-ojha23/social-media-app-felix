@@ -196,6 +196,7 @@ const Home = () => {
                                     <h6 style={{fontWeight: "500"}}>{item.likes.length} likes</h6>
                                     <h6 style={{fontWeight: "450"}}><span style={{fontWeight: "500"}}>{item.author.username}</span> {item.title}</h6>
                                     <p style={{cursor: "pointer"}} onClick={() => onPostSelect(item._id)}>all comments . .</p>
+                                    <div style={{maxHeight: "50px", overflow: "hidden"}}>
                                     {
                                         item.comments.map((record) => {
                                             return(
@@ -205,6 +206,7 @@ const Home = () => {
                                             )
                                         })
                                     }
+                                    </div>
                                     <form onSubmit={(e) => {
                                         e.preventDefault()
                                         addComment(e.target[0].value, item._id)

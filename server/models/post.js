@@ -24,7 +24,7 @@ var Post = new Schema({
                 type: ObjectId,
                 ref: "User"
             }
-        }
+        }, {timestamps: true}
     ],
     author: {
         type: ObjectId,

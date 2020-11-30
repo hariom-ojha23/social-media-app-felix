@@ -60,7 +60,7 @@ router.get('/following', authorize, (req,res) => {
 // post detail
 
 router.get('/:postId', authorize, (req, res) => {
-    Post.findById({_id: req.params.postId})
+    Post.find({_id: req.params.postId})
     .populate("author", "_id username photo")
     .populate("comments.author", "_id username")
     .then((post) => {
@@ -186,8 +186,9 @@ router.put('/comment', authorize, (req, res) => {
     }, {
         new: true
     })
-    .populate("comments.author", "_id username photo")
+    .populate("comments.author", "_id username")
     .populate("author", "_id username photo")
+    .sort('-createdAt')
     .exec((err, result) => {
         if(err) {
             res.statusCode = 422;
