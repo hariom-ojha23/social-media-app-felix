@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+/* Input styling */
+
+input[type="text"], select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #2196f3;
+}
+
+input[type="password"], select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="password"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #2196f3;
+}
+
+input[type="email"], select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="email"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #2196f3;
+}
+
+/* ... */
+
+.btn {
+  border-radius: 0% !important;
+}
+
+hr {
+  margin: 0;
+}
+
+.container1 {
+  max-width: 80%;
+  margin: 5em auto 1em;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.brand,  .title {
+  font-family: 'Grand Hotel', cursive;
+  color: black;
+}
+
+.brand {
+  font-size: 30px;
+}
+
+a {
+  color: black !important;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.authenticate {
+  margin-top: 40px
+}
+
+.auth-card {
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 5em auto;
+}
+
+.profile {
+  margin: 4em auto;
+}
+
+.create {
+  margin: 5em auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 30%;
+  margin: 0px 0px 30px;
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.home-card {
+  max-width: 600px;
+  height: max-content;
+  margin: 30px auto
+}
+
+.posts {
+  margin: 4em 0 1em;
+}
+
+.followers {
+  margin: 4em 0 1em;
+  min-width: 350px;
+}
+
+.follower-card {
+  position: fixed;
+  max-width: 330px;
+  margin: 0 20px;
+}
+
+.follower-list {
+  min-height: 300px;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.modalContent {
+  text-align: center;
+  margin: 0;
+}
+
+.items {
+  text-align: center;
+}
+
+.postDetail {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.imgCard {
+  min-height: 500px;
+  background-color: #000000;
+}
+
+.floating-button .icon {
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  right: 30px;
+  background-color: purple;
+  color: white;
+  height: 60px;
+  width: 60px;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.floating-button .icon .add {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.custom-file-label {
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid #000;
+}
+
+/* between 1000 and 601px */
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  #toast-container {
+    top: 60px !important;
+    right: 30px !important;
+    left: auto !important
+  }
+}
+
+/* less ths 768 px */
+
+@media (max-width: 768px) {
+  .info {
+    display: none;
+  }
+  .profile-pic {
+    width: 100% !important;
+    height: auto !important
+  }
+
+  .dp {
+    width: 10% !important;
+  }
+
+  .container1  {
+    min-width: 95%;
+  }
+
+  .item {
+    margin: 0px 0px 30px;
+    max-height: 130px;
+    min-height: 130px;
+  }
+}
+
+/* between 768 and 540 */
+
+@media (max-width: 768px) and (min-width: 540px) {
+  .profile-pic {
+    width: 80% !important;
+    height: auto !important
+  }
+
+  .dp {
+    width: 8% !important;
+  }
+  
+}
+
+/*  more than 760 */
+
+@media (min-width: 760px) {
+  .info1 {
+    display: none;
+  }
+
+  .info2 {
+    margin-bottom: 20px !important;
+  }
+
+  .profile-pic {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+  }
+}
+
+/* less than 540 */
+
+@media (max-width: 540px) {
+  .item {
+    margin: 0px 0px 30px;
+    max-height: 100px;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    margin: 0px 0px 15px;
+    max-height: 80px;
+    min-height: 80px;
+  }
+}
